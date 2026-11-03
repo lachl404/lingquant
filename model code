@@ -1,0 +1,8 @@
+
+vot_bm <- brm(
+  VOT_ms ~ phonation,
+  family = gaussian,
+  data = ,
+  seed = 6725,
+  file = ""
+) 
