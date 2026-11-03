@@ -1,0 +1,8 @@
+eu_vot |>
+  drop_na(phonation) |>
+  ggplot(aes(phonation, VOT_ms, fill = phonation)) +
+  geom_jitter(alpha = 0.1, width = 0.2) +
+  geom_violin(alpha = 0.8, width =  0.2) +
+  scale_fill_brewer(palette = "Dark2") +
+  labs( x = "phonation", y = "Voice Onset Time (ms)")
+  theme(legend.position = "none")
